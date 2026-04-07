@@ -1,6 +1,6 @@
 {
   "name": "@jcbontemps/cpp-xml2js",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "In-place replacement for xml2js parseString. This is about 20x-30x faster and makes use of the rapidxml C++ library.",
   "keywords": [
     "fast",
@@ -28,7 +28,8 @@
   "scripts": {
     "preinstall": "node-gyp configure && node-gyp build",
     "build": "node-gyp build",
-    "rebuild": "node-gyp rebuild"
+    "rebuild": "node-gyp rebuild",
+    "test": "node --test test/*.test.js"
   },
   "devDependencies": {
     "node-gyp": "^12.2.0"

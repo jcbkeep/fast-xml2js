@@ -1,0 +1,11 @@
+test/
+*.test.js
+*.spec.js
+coverage/
+.nyc_output/
+.editorconfig
+.gitattributes
+.vscode/
+.idea/
+*.log
+AGENTS.md

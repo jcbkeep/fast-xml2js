@@ -13,6 +13,10 @@ var fastxml2js = require('./fast-xml2js/fast-xml2js.node');
  * @param  {parseCallback} cb
  */
 function parseString(xml, cb) {
+    if (typeof cb !== 'function') {
+        throw new Error('Second argument must be a callback function');
+    }
+    
     return fastxml2js.parseString(xml, function(err, data) {
         queueMicrotask(function() {
             cb(err, data);
@@ -20,5 +24,6 @@ function parseString(xml, cb) {
     });
 };
 
-exports.parseString = parseString;
+module.exports.parseString = parseString;
+module.exports.default = parseString;
 
