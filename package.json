@@ -1,39 +1,40 @@
 {
-  "name": "cpp-xml2js",
-  "version": "1.0.9",
+  "name": "@jcbontemps/cpp-xml2js",
+  "version": "1.0.10",
   "description": "In-place replacement for xml2js parseString. This is about 20x-30x faster and makes use of the rapidxml C++ library.",
-  "main": "index.js",
-  "scripts": {
-    "preinstall": "node-gyp configure && node-gyp build",
-    "build": "node-gyp build",
-    "rebuild": "node-gyp rebuild"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jcbkeep/fast-xml2js.git"
-  },
   "keywords": [
     "fast",
     "fast-xml2js",
     "xml2js",
     "C++"
   ],
+  "homepage": "https://github.com/jcbkeep/fast-xml2js#readme",
+  "bugs": {
+    "url": "https://github.com/jcbkeep/fast-xml2js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcbkeep/fast-xml2js.git"
+  },
+  "license": "MIT",
   "author": "Cody Rigney",
   "contributors": [
     {
       "name": "jcbontemps"
     }
   ],
-  "license": "MIT",
-  "gypfile": true,
-  "bugs": {
-    "url": "https://github.com/jcbkeep/fast-xml2js/issues"
-  },
-  "homepage": "https://github.com/jcbkeep/fast-xml2js#readme",
-  "engines": {
-    "node": ">=24.0.0"
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "node-gyp configure && node-gyp build",
+    "build": "node-gyp build",
+    "rebuild": "node-gyp rebuild"
   },
   "devDependencies": {
     "node-gyp": "^12.2.0"
-  }
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "gypfile": true
 }
