@@ -2,6 +2,7 @@ test/
 *.test.js
 *.spec.js
 coverage/
+node_modules
 .nyc_output/
 .editorconfig
 .gitattributes
@@ -9,3 +10,5 @@ coverage/
 .idea/
 *.log
 AGENTS.md
+fast-xml2js
+build
