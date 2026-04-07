@@ -1,3 +1,5 @@
+# Forked and updated from https://github.com/codyrigney92/fast-xml2js
+
 # fast-xml2js
 
 **UPDATE: I'm no longer maintaining this project. If you would like to take it over or you know of a solid fork, please reach out!**

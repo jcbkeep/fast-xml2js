@@ -14,8 +14,7 @@ var fastxml2js = require('./fast-xml2js/fast-xml2js.node');
  */
 function parseString(xml, cb) {
     return fastxml2js.parseString(xml, function(err, data) {
-        //So that it's asynchronous
-        process.nextTick(function() {
+        queueMicrotask(function() {
             cb(err, data);
         });
     });
