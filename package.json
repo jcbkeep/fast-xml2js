@@ -1,5 +1,5 @@
 {
-  "name": "fast-xml2js",
+  "name": "cpp-xml2js",
   "version": "1.0.9",
   "description": "In-place replacement for xml2js parseString. This is about 20x-30x faster and makes use of the rapidxml C++ library.",
   "main": "index.js",
@@ -13,6 +13,8 @@
     "url": "git+https://github.com/jcbkeep/fast-xml2js.git"
   },
   "keywords": [
+    "fast",
+    "fast-xml2js",
     "xml2js",
     "C++"
   ],
